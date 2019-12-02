@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 14px;
+        }
+        
+        .queue {
+            float: right;
+            height: 128px;
+            width: 1100px;
+            border: 1px solid black;
+        }
+        
+        .queue img {
+            height: 64px;
+            display: inline-block;
+        }
+        
+        .content {
+            width: 1304px;
+            height: 800px;
+            margin: auto;
+        }
+        
+        .restaurant {
+            float: right;
+            width: 1100px;
+            height: 600px;
+            border: 1px solid black;
+            display: block;
+            position: relative;
+        }
+        
+        .restaurant .cook div {
+            display: inline-block;
+            text-align: center;
+            margin-right: 10px;
+        }
+        
+        .restaurant .cook div img {
+            display: block;
+        }
+        
+        .restaurant .seat {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+        }
+        
+        .restaurant .seat span {
+            flex: 1;
+            height: 200px;
+            border: 1px solid black;
+            position: relative;
+        }
+        
+        .restaurant .seat span .inf {
+            width: 147px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-align: center;
+        }
+        
+        .restaurant .seat span .inf p {
+            margin: 0;
+        }
+        
+        .restaurant .seat span .toserve {
+            color: black;
+        }
+        
+        .restaurant .seat span .served {
+            color: pink;
+        }
+        
+        .restaurant .seat span .done {
+            color: greenyellow;
+        }
+        
+        .restaurant .seat span .eating {
+            color: blue;
+        }
+        
+        .customer {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+        .customer .list {
+            position: relative;
+        }
+        
+        .customer .list p:last-child {
+            position: absolute;
+            right: 0;
+            margin: 0;
+        }
+        
+        .total-cash {
+            width: 128px;
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 64px);
+            text-align: center;
+        }
+        
+        .rest-time {
+            margin: 0;
+        }
+        
+        .cuslist {
+            display: inline-block;
+            width: 200px;
+            height: 600px;
+            border: 1px solid black;
+        }
+        
+        .cuslist img {
+            display: block;
+        }
+        
+        .information {
+            width: 200px;
+            height: 500px;
+            border: 1px solid black;
+            float: left;
+            position: relative;
+        }
+        /* .information .todolist {} */
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="information">
+            <button>添加厨师</button>
+            <button>添加服务员</button>
+            <button>解雇厨师</button>
+            <button>解雇服务员</button>
+            <div class="cash">餐厅资金:10000</div>
+            <div class="cook">
+            </div>
+            <div class="waiter"></div>
+            <div class="todolist"></div>
+            <div class="toservelist"></div>
+        </div>
+        <div class='restaurant'>
+            <div class='cook'>
+            </div>
+            <div class='seat'>
+            </div>
+        </div>
+        <div class="queue"></div>
+    </div>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/employee.js"></script>
+    <script src="./js/restaurant.js"></script>
+    <script src="./js/cook.js"></script>
+    <script src="./js/waiter.js"></script>
+    <script src="./js/customer.js"></script>
+    <script src="./js/course.js"></script>
+    <script src="./js/cusList.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/factory.js"></script>
+    <script src="./js/cartoon.js"></script>
+    <script src="./js/nameInit.js"></script>
+    <script src="./js/app.js"></script>
+
+    <script>
+    </script>
+</body>
+
+</html>
